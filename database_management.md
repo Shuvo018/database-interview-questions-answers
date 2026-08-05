@@ -22,6 +22,12 @@ SELECT * FROM Worker WHERE SALARY > 100000;
 SELECT * FROM worker WHERE DEPARTMENT = 'Admin';
 ```
 
+#### BETWEEN
+
+```bash
+SELECT * FROM worker WHERE SALARY BETWEEN 100000 AND 200000;
+```
+
 
 ### CREATE database
 
