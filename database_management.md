@@ -210,7 +210,7 @@ FROM employee;
 ```
 result: 5
 
---
+---
 
 With GROUP BY → calculation separately for each group
 
@@ -221,4 +221,4 @@ GROUP BY city;
 ```
 result: Dhaka = 3, Chittagong = 2
 
---
+---
