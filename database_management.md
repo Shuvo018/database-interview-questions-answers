@@ -178,3 +178,47 @@ SELECT * FROM employee WHERE id IN
 SELECT * FROM employee WHERE id NOT IN
 (SELECT empID FROM client);
 ```
+
+## GROUP BY / HAVING / WHERE
+
+```bash
+CREATE DATABASE group_practice;
+
+USE group_practice;
+
+CREATE TABLE employee (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    employee VARCHAR(50),
+    city VARCHAR(50),
+    salary INT
+);
+
+INSERT INTO employee (employee, city, salary)
+VALUES
+('A', 'Dhaka', 30000),
+('B', 'Dhaka', 40000),
+('C', 'Chittagong', 35000),
+('D', 'Chittagong', 45000),
+('E', 'Dhaka', 50000);
+```
+
+Without GROUP BY → one calculation for the whole table
+
+```bash
+SELECT COUNT(*)
+FROM employee;
+```
+result: 5
+
+--
+
+With GROUP BY → calculation separately for each group
+
+```bash
+SELECT city, COUNT(*)
+FROM employee
+GROUP BY city;
+```
+result: Dhaka = 3, Chittagong = 2
+
+--
