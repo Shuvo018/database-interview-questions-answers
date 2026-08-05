@@ -221,6 +221,7 @@ FROM employee
 GROUP BY city;
 ```
 result:
+
 | ---------- | -------------: |
 | Dhaka      |              3 |
 | Chittagong |              2 |
@@ -245,6 +246,8 @@ result:
 
 GROUP BY with HAVING
 
+HAVING filters the groups after grouping.
+
 ```bash
 SELECT city, COUNT(*) AS total_employee
 FROM employee
@@ -258,3 +261,20 @@ result:
 | Dhaka |              3 |
 
 ---
+
+GROUP BY with WHERE
+
+WHERE → filters rows BEFORE grouping
+
+```bash
+SELECT city, COUNT(*)
+FROM employee
+WHERE salary > 30000
+GROUP BY city;
+```
+
+### Easy memory trick
+
+WHERE   → filter rows / Which ROWS do I want?
+GROUP BY → create groups / How should I GROUP them?
+HAVING  → filter groups / Which GROUPS do I want?
