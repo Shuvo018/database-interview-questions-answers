@@ -40,6 +40,11 @@ SELECT * FROM worker WHERE DEPARTMENT='HR' OR DEPARTMENT='Admin';
 SELECT * FROM worker WHERE DEPARTMENT IN('HR', 'Admin');
 ```
 
+#### NOT IN
+
+```bash
+SELECT * FROM worker WHERE DEPARTMENT NOT IN('HR', 'Admin');
+```
 
 ### CREATE database
 
