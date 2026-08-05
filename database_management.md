@@ -68,6 +68,13 @@ SELECT * FROM worker ORDER BY salary ASC;
 SELECT * FROM worker ORDER BY salary DESC;
 ```
 
+#### DISTINCT
+
+DISTINCT is used to remove duplicate values
+
+```bash
+SELECT DISTINCT department FROM worker;
+```
 
 ### CREATE database
 
