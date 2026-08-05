@@ -101,3 +101,9 @@ SELECT * FROM employee WHERE id in
 (SELECT empID FROM project group by empID having count(empID) > 1);
 
 ```
+
+4. emp details having age > avg(age)
+
+```bash
+SELECT * FROM employee WHERE age > (SELECT avg(age) FROM employee);
+```
