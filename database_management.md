@@ -86,6 +86,7 @@ SELECT SUM(salary) AS total_salary FROM worker;
 SELECT COUNT(*) AS total_worker FROM worker;
 ```
 
+## Sub queries / Join / group by
 ### CREATE database
 
 ```bash
