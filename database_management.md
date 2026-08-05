@@ -76,6 +76,16 @@ DISTINCT is used to remove duplicate values
 SELECT DISTINCT department FROM worker;
 ```
 
+####  Aggregate Functions in SQL
+
+```bash
+SELECT MIN(salary) AS lowest_salary FROM worker;
+SELECT MAX(salary) AS highest_salary FROM worker;
+SELECT AVG(salary) AS average_salary FROM worker;
+SELECT SUM(salary) AS total_salary FROM worker;
+SELECT COUNT(*) AS total_worker FROM worker;
+```
+
 ### CREATE database
 
 ```bash
