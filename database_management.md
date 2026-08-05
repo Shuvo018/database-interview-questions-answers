@@ -15,6 +15,14 @@ SELECT lcase('HELL0');
 ```
 
 
+#### WHERE
+
+```bash
+SELECT * FROM Worker WHERE SALARY > 100000;
+SELECT * FROM worker WHERE DEPARTMENT = 'Admin';
+```
+
+
 ### CREATE database
 
 ```bash
