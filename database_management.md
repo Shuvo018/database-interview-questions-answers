@@ -87,7 +87,10 @@ SELECT * FROM employee WHERE age in (SELECT age FROM employee WHERE age>30);
 
 ```
 
+2. Find the youngest employee.
 
 ```bash
-
+SELECT * FROM employee WHERE age = 
+(SELECT MIN(age) FROM employee);
 ```
+
