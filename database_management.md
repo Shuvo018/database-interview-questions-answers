@@ -34,6 +34,12 @@ SELECT * FROM worker WHERE SALARY BETWEEN 100000 AND 200000;
 SELECT * FROM worker WHERE DEPARTMENT='HR' OR DEPARTMENT='Admin';
 ```
 
+#### IN
+
+```bash
+SELECT * FROM worker WHERE DEPARTMENT IN('HR', 'Admin');
+```
+
 
 ### CREATE database
 
