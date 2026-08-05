@@ -142,3 +142,15 @@ JOIN client c
 GROUP BY e.id, e.fname
 HAVING COUNT(c.id) > 1;
 ```
+
+8. Display employee name, client name and client city
+
+```bash
+SELECT
+    e.fname AS employee_name,
+    c.first_name AS client_name,
+    c.city AS client_city
+FROM employee e
+JOIN client c
+    ON e.id = c.empID;
+```
