@@ -171,3 +171,10 @@ GROUP BY e.id;
 SELECT * FROM employee WHERE id IN
 (SELECT empID FROM client);
 ```
+
+11. Find employees who don't have any client.
+
+```bash
+SELECT * FROM employee WHERE id NOT IN
+(SELECT empID FROM client);
+```
