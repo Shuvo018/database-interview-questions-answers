@@ -7,7 +7,12 @@
 worker(id, first_name, last_name, salary, department)
 ```
 
+#### ucase/lcase
 
+```bash
+SELECT ucase('hello');
+SELECT lcase('HELL0');
+```
 
 
 ### CREATE database
