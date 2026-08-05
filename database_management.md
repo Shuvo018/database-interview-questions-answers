@@ -1,5 +1,15 @@
 # Database management SQL query Interview questions
 
+
+
+### Basic Example
+```bash
+worker(id, first_name, last_name, salary, department)
+```
+
+
+
+
 ### CREATE database
 
 ```bash
