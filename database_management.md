@@ -222,6 +222,7 @@ GROUP BY city;
 ```
 result:
 
+| city       | COUNT(*) |
 | ---------- | -------------: |
 | Dhaka      |              3 |
 | Chittagong |              2 |
@@ -273,8 +274,12 @@ WHERE salary > 30000
 GROUP BY city;
 ```
 
+---
+
 ### Easy memory trick
 
 WHERE   → filter rows / Which ROWS do I want?
+
 GROUP BY → create groups / How should I GROUP them?
+
 HAVING  → filter groups / Which GROUPS do I want?
