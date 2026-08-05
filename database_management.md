@@ -51,6 +51,15 @@ SELECT * FROM worker WHERE DEPARTMENT NOT IN('HR', 'Admin');
 SELECT * FROM worker WHERE SALARY IS NULL;
 ```
 
+#### Pattern search/ willdcard
+```bash
+SELECT * FROM worker WHERE first_name  LIKE '%i%';
+SELECT * FROM worker WHERE first_name  LIKE '_i%';
+SELECT * FROM worker WHERE first_name  LIKE '%i_';
+SELECT * FROM worker WHERE first_name  LIKE 'i_';
+SELECT * FROM worker WHERE first_name  LIKE '_i';
+```
+
 ### CREATE database
 
 ```bash
