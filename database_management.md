@@ -94,3 +94,10 @@ SELECT * FROM employee WHERE age =
 (SELECT MIN(age) FROM employee);
 ```
 
+3. emp details working in more than 1 project.
+
+```bash
+SELECT * FROM employee WHERE id in 
+(SELECT empID FROM project group by empID having count(empID) > 1);
+
+```
