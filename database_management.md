@@ -164,3 +164,10 @@ LEFT JOIN project as p
 ON p.empID = e.id
 GROUP BY e.id;
 ```
+
+10. Find employees who have at least one client.
+
+```bash
+SELECT * FROM employee WHERE id IN
+(SELECT empID FROM client);
+```
