@@ -127,3 +127,18 @@ FROM employee as e2
 WHERE e2.age >= e1.age
 );
 ```
+
+7. Find employees who have more than one client.
+
+
+```bash
+SELECT 
+    e.id,
+    e.fname,
+    COUNT(c.id) AS total_clients
+FROM employee e
+JOIN client c
+    ON e.id = c.empID
+GROUP BY e.id, e.fname
+HAVING COUNT(c.id) > 1;
+```
