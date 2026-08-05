@@ -60,6 +60,15 @@ SELECT * FROM worker WHERE first_name  LIKE 'i_';
 SELECT * FROM worker WHERE first_name  LIKE '_i';
 ```
 
+#### sorting using ORDER BY
+
+```bash
+SELECT * FROM worker ORDER BY salary;
+SELECT * FROM worker ORDER BY salary ASC;
+SELECT * FROM worker ORDER BY salary DESC;
+```
+
+
 ### CREATE database
 
 ```bash
