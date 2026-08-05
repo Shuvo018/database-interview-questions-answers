@@ -46,6 +46,11 @@ SELECT * FROM worker WHERE DEPARTMENT IN('HR', 'Admin');
 SELECT * FROM worker WHERE DEPARTMENT NOT IN('HR', 'Admin');
 ```
 
+#### IS NULL
+```bash
+SELECT * FROM worker WHERE SALARY IS NULL;
+```
+
 ### CREATE database
 
 ```bash
