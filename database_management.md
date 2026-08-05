@@ -154,3 +154,13 @@ FROM employee e
 JOIN client c
     ON e.id = c.empID;
 ```
+
+9. Find the number of projects handled by each employee.
+
+```bash
+SELECT e.fname, count(p.id) as number_of_proj
+FROM employee as e
+LEFT JOIN project as p
+ON p.empID = e.id
+GROUP BY e.id;
+```
