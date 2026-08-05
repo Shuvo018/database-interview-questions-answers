@@ -115,3 +115,15 @@ SELECT * FROM employee WHERE age > (SELECT avg(age) FROM employee);
 SELECT max(age) FROM (SELECT * FROM employee WHERE fname like '%a%') as temp;
 
 ```
+
+6. find 3rd oldest employee
+
+
+```bash
+SELECT * FROM employee as e1
+WHERE 2 = (
+SELECT COUNT(e2.age)
+FROM employee as e2
+WHERE e2.age >= e1.age
+);
+```
