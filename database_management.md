@@ -201,6 +201,7 @@ VALUES
 ('D', 'Chittagong', 45000),
 ('E', 'Dhaka', 50000);
 ```
+---
 
 Without GROUP BY → one calculation for the whole table
 
@@ -210,7 +211,7 @@ FROM employee;
 ```
 result: 5
 
----
+
 
 With GROUP BY → calculation separately for each group
 
@@ -219,6 +220,41 @@ SELECT city, COUNT(*)
 FROM employee
 GROUP BY city;
 ```
-result: Dhaka = 3, Chittagong = 2
+result:
+| ---------- | -------------: |
+| Dhaka      |              3 |
+| Chittagong |              2 |
+
+
+---
+
+GROUP BY without HAVING
+
+```bash
+SELECT city, COUNT(*) AS total_employee
+FROM employee
+GROUP BY city;
+```
+result:
+| city       | total_employee |
+| ---------- | -------------: |
+| Dhaka      |              3 |
+| Chittagong |              2 |
+
+
+
+GROUP BY with HAVING
+
+```bash
+SELECT city, COUNT(*) AS total_employee
+FROM employee
+GROUP BY city
+HAVING COUNT(*) > 2;
+```
+
+result:
+| city  | total_employee |
+| ----- | -------------: |
+| Dhaka |              3 |
 
 ---
