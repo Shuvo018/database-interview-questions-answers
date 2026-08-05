@@ -107,3 +107,11 @@ SELECT * FROM employee WHERE id in
 ```bash
 SELECT * FROM employee WHERE age > (SELECT avg(age) FROM employee);
 ```
+
+5. select max age person whose first name contains 'a'
+
+
+```bash
+SELECT max(age) FROM (SELECT * FROM employee WHERE fname like '%a%') as temp;
+
+```
