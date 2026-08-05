@@ -1,17 +1,29 @@
 # Database management SQL query Interview questions
 
-
-
-### Basic Example
 ```bash
-worker(id, first_name, last_name, salary, department)
+SELECT 10 + 11;
+
+-- result: 21
+
+SELECT NOW();
+
+-- return current date and time of your MySQL server/session.
+-- result: 2026-08-06 01:25:30
 ```
+
 
 #### ucase/lcase
 
 ```bash
 SELECT ucase('hello');
 SELECT lcase('HELL0');
+```
+
+---
+
+### Basic Example
+```bash
+worker(id, first_name, last_name, salary, department)
 ```
 
 
