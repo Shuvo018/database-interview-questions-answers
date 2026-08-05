@@ -79,3 +79,15 @@ INSERT INTO project VALUES
 SELECT * FROM project;
 
 ```
+
+employees with age > 30
+
+```bash
+SELECT * FROM employee WHERE age in (SELECT age FROM employee WHERE age>30);
+
+```
+
+
+```bash
+
+```
