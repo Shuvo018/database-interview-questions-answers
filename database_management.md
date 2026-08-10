@@ -338,6 +338,8 @@ GROUP BY city;
 ```
 result:
 | city       | total_employee |
+
+
 | ---------- | -------------: |
 | Dhaka      |              3 |
 | Chittagong |              2 |
@@ -382,3 +384,8 @@ WHERE   → filter rows / Which ROWS do I want?
 GROUP BY → create groups / How should I GROUP them?
 
 HAVING  → filter groups / Which GROUPS do I want?
+
+
+---
+
+![JOIN GROUP WHERE HAVING](./JOIN-GROUP-WHERE-HAVING.png)
